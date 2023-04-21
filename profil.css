@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
+*{
+	text-decoration: none;
+	list-style-type: none;
+	scroll-behavior: smooth;
+	color: white;
+}
+
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	height: fit-content;
+	background: no-repeat;
+	color: #ffffff;
+	height: 100%;
+	background-image: url("violet.jpg");
+	background-size: cover;
+}
+
+
+nav {
+	display: flex;
+	width: 100%;
+	height: 80px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	background: transparent;
+	z-index: 10;
+}
+nav .profile {
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.2rem;
+	padding-left: 20px;
+}
+.color{
+	filter: drop-shadow(4px 4px 10px rgba(98, 97, 97, 0.481));
+}
+
+nav .profile h1 {
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.orange{
+	color: #000000;
+	background-color: #ff00fbaa;
+	padding: 5px;
+	border-radius: 5px;
+	font-weight: 900;
+}
+nav ul {
+	display: flex;
+	position: absolute;
+	right: 0;
+	border-radius: 10%;
+	width: auto;
+}
+nav ul li {
+	cursor: pointer;
+	border-radius: 50%;
+	display: block;
+	margin: 10px;
+	padding: 20px;
+	transition: all 0.3s ease; /* Cette propriété ajoute une transition fluide lorsque la couleur de fond change */
+}
+nav ul li img {
+	width: 30px;
+	height: auto;
+	filter: invert(100%);
+}
+
+
+nav ul li:hover {
+	background-color: #ff00fbaa	;
+	filter: drop-shadow(4px 4px 10px rgba(98, 97, 97, 0.481));
+}
+
+nav ul li img:hover {
+	filter: invert(100%);
+}
+nav ul a{
+    text-decoration: none;
+    color: #000000;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+.bloc h1{
+	font-size: 50px !important;
+}
+
+.bloc h1, .bloc2 h1, .bloc3 h1{
+	margin: 20px;
+	font-size: 25px;
+}
+
+
+.bloc p{
+	margin: 20px;
+	font-size: 20px !important;
+}
+
+.section{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	padding-top: 10px;
+}
+
+.bloc{
+	grid-column: 1;
+	grid-row: 1;
+	border-radius: 20px;
+	justify-content: center;
+	margin-top: 110px;
+	margin-left: 20px;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
